@@ -8,7 +8,7 @@ const projects = [
       "My personal portfolio showcasing projects, skills and development journey.",
     tech: ["React", "Tailwind CSS", "Framer Motion"],
     github: "#",
-    demo: "",   // or null
+    demo: "Built with React & Tailwind CSS",   // or null
   },  
   {
     title: "AI Image Detector",
