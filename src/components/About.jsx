@@ -88,10 +88,10 @@ export default function About() {
 
               <div className="bg-[#F8FAFC] rounded-2xl p-6 shadow-sm">
                 <h3 className="text-3xl font-bold text-[#00246B]">
-                  Full
+                  Full Stack
                 </h3>
                 <p className="mt-2 text-gray-600">
-                  Stack
+                  Development
                 </p>
               </div>
 
