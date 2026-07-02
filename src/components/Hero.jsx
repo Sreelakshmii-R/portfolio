@@ -10,7 +10,7 @@ import {
 import { SiJavascript, SiSupabase } from "react-icons/si";
 
 import profile from "../assets/profile.png";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/myResume.pdf";
 
 export default function Hero() {
   return (
