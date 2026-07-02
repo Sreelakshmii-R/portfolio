@@ -62,7 +62,7 @@ export default function FeaturedWork() {
           transition={{ duration: 0.6 }}
           src={home}
           alt="Interview IQ"
-          className="rounded-2xl shadow-lg max-h-[400px] object-cover mx-auto pt-10"
+          className="rounded-2xl shadow-lg max-h-[400px] object-cover mx-auto mt-10"
         />
 
         {/* Features + Tech */}
