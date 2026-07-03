@@ -70,7 +70,7 @@ npm run build
 ## 📬 Connect With Me
 
 * GitHub: https://github.com/Sreelakshmii-R
-* LinkedIn: *(Add your LinkedIn profile URL here)*
+* LinkedIn: https://www.linkedin.com/in/sreelakshmi62380/
 * Portfolio: https://portfolio-lime-delta-91.vercel.app/
 
 ---
