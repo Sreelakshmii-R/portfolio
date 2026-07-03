@@ -1,16 +1,78 @@
-# React + Vite
+## 🌐 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This website showcases my projects, technical skills, and journey as an aspiring Software Engineer. It highlights the work I've built, the technologies I use, and provides an easy way to connect with me.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 **Portfolio:** https://portfolio-lime-delta-91.vercel.app/
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Responsive and modern user interface
+* Smooth animations with Framer Motion
+* Featured project showcase
+* Skills and technology stack
+* Project gallery
+* Resume download
+* Contact section with social links
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* Tailwind CSS
+* Framer Motion
+* JavaScript
+* HTML5
+* CSS3
+
+## 📂 Project Structure
+
+```text
+src/
+ ├── assets/
+ ├── components/
+ ├── App.jsx
+ └── main.jsx
+```
+
+## ⚙️ Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Sreelakshmii-R/portfolio.git
+```
+
+Navigate to the project:
+
+```bash
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## 📬 Connect With Me
+
+* GitHub: https://github.com/Sreelakshmii-R
+* LinkedIn: *(Add your LinkedIn profile URL here)*
+* Portfolio: https://portfolio-lime-delta-91.vercel.app/
+
+---
+
+Designed & Developed with ❤️ by **Sreelakshmi Ramesh**
