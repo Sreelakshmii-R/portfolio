@@ -11,18 +11,18 @@ const projects = [
     demo: "https://portfolio-lime-delta-91.vercel.app/",   // or null
   },  
   {
-    title: "Space Escape Runner",
-    description:
-      "description:"A 2D arcade-style mobile game built with React Native and Expo featuring asteroid dodging, score tracking, collision detection, and persistent high scores.",
-      tech: [
-      "React Native",
-      "Expo",
-      "JavaScript",
-      "AsyncStorage",
-    ],
-    github: "https://github.com/Sreelakshmii-R/SpaceEscapeRunner",
-    demo: "https://github.com/user-attachments/assets/e7168b11-daf6-4c94-81ab-fbaf71f3a202", // or null
-  },
+  title: "Space Escape Runner",
+  description:
+    "A 2D arcade-style mobile game built with React Native and Expo featuring asteroid dodging, score tracking, collision detection, and persistent high scores.",
+  tech: [
+    "React Native",
+    "Expo",
+    "JavaScript",
+    "AsyncStorage",
+  ],
+  github: "https://github.com/Sreelakshmii-R/SpaceEscapeRunner",
+  demo: "https://github.com/user-attachments/assets/e7168b11-daf6-4c94-81ab-fbaf71f3a202",
+},
   {
     title: "AI Image Detector",
     description:
