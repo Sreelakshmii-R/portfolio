@@ -8,8 +8,21 @@ const projects = [
       "My personal portfolio showcasing projects, skills and development journey.",
     tech: ["React", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/Sreelakshmii-R/portfolio",
-    demo: "http://portfolio-lime-delta-91.vercel.app/",   // or null
+    demo: "https://portfolio-lime-delta-91.vercel.app/",   // or null
   },  
+  {
+    title: "Space Escape Runner",
+    description:
+      "A 2D arcade-style mobile game built with React Native and Expo where players control a spaceship to dodge falling asteroids, achieve the highest score, and enjoy a modern game interface.",
+    tech: [
+      "React Native",
+      "Expo",
+      "JavaScript",
+      "AsyncStorage",
+    ],
+    github: "https://github.com/Sreelakshmii-R/SpaceEscapeRunner",
+    demo: "https://github.com/user-attachments/assets/e7168b11-daf6-4c94-81ab-fbaf71f3a202", // or null
+  },
   {
     title: "AI Image Detector",
     description:
@@ -81,15 +94,17 @@ export default function Projects() {
                 </a>
 
                 {project.demo && (
-                    <a
+                  <a
                     href={project.demo}
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-2 text-[#00246B] hover:underline"
-                    >
+                  >
                     <FaExternalLinkAlt />
-                    Demo
-                    </a>
+                    {project.title === "Space Escape Runner"
+                      ? "Demo Video"
+                      : "Live Demo"}
+                  </a>
                 )}
               </div>
             </motion.div>
