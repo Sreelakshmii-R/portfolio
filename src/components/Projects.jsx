@@ -37,7 +37,7 @@ const projects = [
       "A modern web application focused on creating clean and engaging user experiences.",
     tech: ["React", "Node.js", "Express"],
     github: "https://github.com/Sreelakshmii-R/visora-vision-hub",
-    demo: "https://google.com",   // or null
+    demo: "https://visora-vision-hub.lovable.app/",   // or null
   },
   
 ];
