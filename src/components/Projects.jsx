@@ -13,8 +13,8 @@ const projects = [
   {
     title: "Space Escape Runner",
     description:
-      "A 2D arcade-style mobile game built with React Native and Expo where players control a spaceship to dodge falling asteroids, achieve the highest score, and enjoy a modern game interface.",
-    tech: [
+      "description:"A 2D arcade-style mobile game built with React Native and Expo featuring asteroid dodging, score tracking, collision detection, and persistent high scores.",
+      tech: [
       "React Native",
       "Expo",
       "JavaScript",
