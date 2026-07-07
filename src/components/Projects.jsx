@@ -21,7 +21,7 @@ const projects = [
     "AsyncStorage",
   ],
   github: "https://github.com/Sreelakshmii-R/SpaceEscapeRunner",
-  demo: "https://github.com/user-attachments/assets/e7168b11-daf6-4c94-81ab-fbaf71f3a202",
+  demo: "https://github.com/user-attachments/assets/e7168b11-daf6-4c94-81ab-fbaf71f3a202",  // or null
 },
   {
     title: "AI Image Detector",
@@ -37,7 +37,7 @@ const projects = [
       "A modern web application focused on creating clean and engaging user experiences.",
     tech: ["React", "Node.js", "Express"],
     github: "https://github.com/Sreelakshmii-R/visora-vision-hub",
-    demo: "https://visora-vision-hub.lovable.app/",   // or null
+    demo: "https://google.com",   // or null
   },
   
 ];
