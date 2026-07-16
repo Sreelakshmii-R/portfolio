@@ -5,7 +5,7 @@ const projects = [
    {
     title: "RescueAI",
     description:
-      "An AI-powered emergency triage assistant that analyzes symptoms and provides structured emergency guidance, first-aid recommendations, and severity assessment.",
+      "An AI-powered emergency triage assistant that analyzes symptoms and provides first-aid guidance."
     tech: [
       "React",
       "Node.js",
