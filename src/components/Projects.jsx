@@ -15,7 +15,7 @@ const projects = [
       "Groq LLM"
     ],
     github: "https://github.com/Sreelakshmii-R/RescueAI",
-    demo: "https://your-vercel-url.vercel.app/", // Replace with your deployed frontend URL
+    demo: "https://rescue-ai-zeta.vercel.app/", // Replace with your deployed frontend URL
   },
   {
     title: "Portfolio Website",
