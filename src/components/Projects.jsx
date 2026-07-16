@@ -5,7 +5,7 @@ const projects = [
    {
     title: "RescueAI",
     description:
-      "An AI-powered emergency triage assistant that analyzes symptoms and provides first-aid guidance."
+      "An AI-powered emergency triage assistant that analyzes symptoms and provides first-aid guidance.",
     tech: [
       "React",
       "Node.js",
@@ -15,7 +15,7 @@ const projects = [
       "Groq LLM"
     ],
     github: "https://github.com/Sreelakshmii-R/RescueAI",
-    demo: "https://rescue-ai-zeta.vercel.app/", // or null
+    demo: "https://rescue-ai-zeta.vercel.app/",   // or null
   },
   {
     title: "Portfolio Website",
