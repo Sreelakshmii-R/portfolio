@@ -2,6 +2,21 @@ import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
+   {
+    title: "RescueAI",
+    description:
+      "An AI-powered emergency triage assistant that analyzes symptoms and provides structured emergency guidance, first-aid recommendations, and severity assessment.",
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "Tailwind CSS",
+      "Supabase",
+      "Groq LLM"
+    ],
+    github: "https://github.com/Sreelakshmii-R/RescueAI",
+    demo: "https://your-vercel-url.vercel.app/", // Replace with your deployed frontend URL
+  },
   {
     title: "Portfolio Website",
     description:
