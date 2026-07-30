@@ -17,6 +17,20 @@ const projects = [
     github: "https://github.com/Sreelakshmii-R/RescueAI",
     demo: "https://rescue-ai-zeta.vercel.app/",   // or null
   },
+   {
+  title: "InterviewIQ",
+  description:
+    "An AI-powered interview simulator that generates personalized questions and provides automated interview feedback.",
+  tech: [
+    "React",
+    "Node.js",
+    "Express",
+    "Supabase",
+    "Groq AI"
+  ],
+  github: "https://github.com/Sreelakshmii-R/InterviewIQ",
+  demo: "https://interview-iq-chi.vercel.app/",   // or null
+},
   {
     title: "Portfolio Website",
     description:
