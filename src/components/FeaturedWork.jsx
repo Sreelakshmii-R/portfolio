@@ -5,23 +5,23 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 
-import home from "../assets/interview-home.png";
-import dashboard from "../assets/interview-dashboard.png";
+import dashboard from "../assets/codedoctor-dashboard.png";
+import repository from "../assets/codedoctor-repository.png";
 
 const features = [
-  "AI Resume Analysis",
-  "AI Mock Interviews",
-  "Speech Recognition",
-  "Instant AI Feedback",
-  "Performance Dashboard",
+  "AI GitHub Repository Analysis",
+  "Code Quality Review",
+  "Bug Detection",
+  "Security Vulnerability Analysis",
+  "AI Code Insights",
 ];
 
 const techStack = [
   "React",
-  "Node.js",
-  "Express",
-  "Supabase",
+  "FastAPI",
+  "PostgreSQL",
   "Groq AI",
+  "Docker",
   "Tailwind CSS",
 ];
 
@@ -43,14 +43,13 @@ export default function FeaturedWork() {
           </p>
 
           <h2 className="text-4xl font-bold mt-3 text-[#2E2E2E]">
-            Interview IQ
+            CodeDoctor AI
           </h2>
 
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-base leading-7">
-            AI-powered interview preparation platform that analyzes
-            resumes, generates personalized interview questions,
-            conducts mock interviews and provides intelligent
-            feedback to improve interview performance.
+            AI-powered repository intelligence platform that analyzes
+            GitHub repositories for code quality, bugs, security issues,
+            and best-practice recommendations.
           </p>
         </motion.div>
 
@@ -60,8 +59,8 @@ export default function FeaturedWork() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          src={home}
-          alt="Interview IQ"
+          src={dashboard}
+          alt="CodeDoctor AI Dashboard"
           className="rounded-2xl shadow-lg max-h-[400px] object-cover mx-auto mt-10"
         />
 
@@ -106,7 +105,9 @@ export default function FeaturedWork() {
 
             <div className="flex gap-4 mt-8">
               <a
-                href="https://interview-iq-chi.vercel.app/"
+                href="https://code-doctor-ai-orcin.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
                 className="bg-[#00246B] text-white px-5 py-2.5 rounded-lg flex items-center gap-2 hover:scale-105 transition"
               >
                 <FaExternalLinkAlt />
@@ -114,7 +115,7 @@ export default function FeaturedWork() {
               </a>
 
               <a
-                href="https://github.com/Sreelakshmii-R/Interview-IQ"
+                href="https://github.com/Sreelakshmii-R/CodeDoctor-AI"
                 target="_blank"
                 rel="noreferrer"
                 className="border px-5 py-2.5 rounded-lg flex items-center gap-2 hover:border-[#00246B] transition"
@@ -126,7 +127,7 @@ export default function FeaturedWork() {
           </div>
         </div>
 
-        {/* Dashboard */}
+        {/* Repository Preview */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -135,12 +136,12 @@ export default function FeaturedWork() {
           className="mt-16"
         >
           <h3 className="text-2xl font-bold text-center mb-8">
-            Dashboard Preview
+            Repository Analysis Preview
           </h3>
 
           <img
-            src={dashboard}
-            alt="Dashboard"
+            src={repository}
+            alt="CodeDoctor AI Repository Analysis"
             className="rounded-2xl shadow-lg max-h-[400px] object-cover mx-auto"
           />
         </motion.div>
