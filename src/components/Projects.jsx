@@ -28,7 +28,7 @@ const projects = [
     "Supabase",
     "Groq AI"
   ],
-  github: "https://github.com/Sreelakshmii-R/InterviewIQ",
+  github: "https://github.com/Sreelakshmii-R/Interview-IQ",
   demo: "https://interview-iq-chi.vercel.app/",   // or null
 },
   {
