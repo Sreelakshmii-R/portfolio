@@ -5,7 +5,7 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 
-import dashboard from "../assets/codedoctor-dashboard.png";
+import dashboard from "../assets/dashboard-codedoctor.png";
 import repository from "../assets/codedoctor-repository.png";
 
 const features = [
