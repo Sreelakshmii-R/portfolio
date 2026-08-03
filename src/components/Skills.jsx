@@ -5,6 +5,7 @@ import {
   FaNodeJs,
   FaPython,
   FaGitAlt,
+  FaServer,
   FaGithub,
   FaDocker,
   FaLinux,
@@ -19,7 +20,6 @@ import {
   SiSqlite,
   SiPostman,
   SiVercel,
-  SiRender,
   SiOpenai,
   SiMongodb,
 } from "react-icons/si";
@@ -59,6 +59,11 @@ const skills = [
     icon: <FaPython size={42} />,
     title: "Python",
     desc: "Backend & scripting",
+  },
+  {
+    icon: <FaServer size={42} />,
+    title: "Render",
+    desc: "Backend deployment",
   },
   {
     icon: <SiPostgresql size={42} />,
