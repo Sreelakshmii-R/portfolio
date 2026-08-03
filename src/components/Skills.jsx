@@ -20,7 +20,6 @@ import {
   SiSqlite,
   SiPostman,
   SiVercel,
-  SiOpenai,
   SiMongodb,
 } from "react-icons/si";
 
@@ -116,7 +115,7 @@ const skills = [
     desc: "Frontend deployment",
   },
   {
-    icon: <SiOpenai size={42} />,
+    icon: <FaPython size={42} />,
     title: "LLM APIs",
     desc: "OpenAI & Groq integration",
   },
