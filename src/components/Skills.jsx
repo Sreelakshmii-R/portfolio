@@ -3,9 +3,11 @@ import { motion } from "framer-motion";
 import {
   FaReact,
   FaNodeJs,
+  FaPython,
   FaGitAlt,
   FaGithub,
-  FaPython,
+  FaDocker,
+  FaLinux,
 } from "react-icons/fa";
 
 import {
@@ -13,6 +15,15 @@ import {
   SiExpress,
   SiSupabase,
   SiTailwindcss,
+  SiFastapi,
+  SiPostgresql,
+  SiMysql,
+  SiSqlite,
+  SiPostman,
+  SiVercel,
+  SiRender,
+  SiOpenai,
+  SiMongodb,
 } from "react-icons/si";
 
 const skills = [
@@ -61,6 +72,56 @@ const skills = [
     title: "Tailwind CSS",
     desc: "Modern UI Styling",
   },
+  {
+  icon: <SiFastapi size={42} />,
+  title: "FastAPI",
+  desc: "High-performance Python APIs",
+},
+{
+  icon: <SiPostgresql size={42} />,
+  title: "PostgreSQL",
+  desc: "Relational Database",
+},
+{
+  icon: <SiSqlite size={42} />,
+  title: "SQLite",
+  desc: "Lightweight Database",
+},
+{
+  icon: <SiMongodb size={42} />,
+  title: "MongoDB",
+  desc: "NoSQL Database",
+},
+{
+  icon: <FaDocker size={42} />,
+  title: "Docker",
+  desc: "Containerization",
+},
+{
+  icon: <FaLinux size={42} />,
+  title: "Linux",
+  desc: "Command Line & Development",
+},
+{
+  icon: <SiPostman size={42} />,
+  title: "Postman",
+  desc: "API Testing",
+},
+{
+  icon: <SiVercel size={42} />,
+  title: "Vercel",
+  desc: "Frontend Deployment",
+},
+{
+  icon: <SiRender size={42} />,
+  title: "Render",
+  desc: "Backend Deployment",
+},
+{
+  icon: <SiOpenai size={42} />,
+  title: "LLM APIs",
+  desc: "OpenAI & Groq Integration",
+},
 ];
 
 export default function Skills() {
