@@ -105,7 +105,7 @@ export default function Hero() {
 
             <div>
               <h3 className="text-3xl font-bold text-[#00246B]">
-                3+
+                5+
               </h3>
 
               <p className="text-gray-500">
