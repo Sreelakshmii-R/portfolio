@@ -15,7 +15,6 @@ import {
   SiExpress,
   SiSupabase,
   SiTailwindcss,
-  SiFastapi,
   SiPostgresql,
   SiSqlite,
   SiPostman,
@@ -52,7 +51,7 @@ const skills = [
     desc: "REST API development",
   },
   {
-    icon: <SiFastapi size={42} />,
+    icon: <FaPython size={42} />,
     title: "FastAPI",
     desc: "High-performance Python APIs",
   },
@@ -110,11 +109,6 @@ const skills = [
     icon: <SiVercel size={42} />,
     title: "Vercel",
     desc: "Frontend deployment",
-  },
-  {
-    icon: <SiRender size={42} />,
-    title: "Render",
-    desc: "Backend deployment",
   },
   {
     icon: <SiOpenai size={42} />,
