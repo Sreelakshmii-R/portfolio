@@ -51,7 +51,7 @@ export default function Hero() {
               <h2 className="text-xl sm:text-2xl text-[#00246B] font-semibold">
                 <Typewriter
                   words={[
-                    "Aspiring Software Engineer",
+                    "Software Developer",
                     "Full Stack Developer",
                     "React Developer",
                     "AI Enthusiast",
@@ -213,7 +213,7 @@ export default function Hero() {
                 </h3>
 
                 <p className="text-[#00246B] mt-2">
-                  Aspiring Software Engineer
+                  Software Developer
                 </p>
 
                 <span className="inline-block mt-4 sm:mt-5 px-4 sm:px-5 py-2 rounded-full bg-green-100 text-green-700 text-xs sm:text-sm font-semibold">
