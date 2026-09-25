@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import ProfessionalExperience from "./components/ProfessionalExperience";
 import FeaturedWork from "./components/FeaturedWork";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
@@ -11,23 +12,21 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-[#F8FAFC] text-[#1F2937] overflow-x-hidden">
+    <div className="w-full bg-[#F8FAFC] text-[#1F2937] overflow-x-hidden">
       <Navbar />
-      <div className="w-full flex flex-col items-center">
-        <section className="w-full">
-          <Hero />
-        </section>
 
-        <section className="w-full py-24">
-          <About />
-        </section>
-      </div>
-      <Skills />
-      <FeaturedWork />
-      <Projects />
-      <Education />
-      <WhyMe />
-      <Contact />
+      <main className="w-full">
+        <Hero />
+        <About />
+        <Skills />
+        <ProfessionalExperience />
+        <FeaturedWork />
+        <Projects />
+        <Education />
+        <WhyMe />
+        <Contact />
+      </main>
+
       <Footer />
     </div>
   );

@@ -5,165 +5,168 @@ import {
   FaNodeJs,
   FaPython,
   FaGitAlt,
-  FaServer,
   FaGithub,
   FaDocker,
   FaLinux,
+  FaHtml5,
+  FaCss3Alt,
+  FaServer,
 } from "react-icons/fa";
 
 import {
   SiJavascript,
   SiExpress,
+  SiFastapi,
+  SiFlask,
   SiSupabase,
   SiTailwindcss,
+  SiBootstrap,
   SiPostgresql,
   SiSqlite,
+  SiMongodb,
   SiPostman,
   SiVercel,
-  SiMongodb,
+  SiRender,
+  SiExpo,
 } from "react-icons/si";
 
-const skills = [
+const skillCategories = [
   {
-    icon: <FaReact size={42} />,
-    title: "React",
-    desc: "Building modern, responsive user interfaces",
+    title: "Frontend Development",
+    skills: [
+      { name: "HTML5", icon: <FaHtml5 /> },
+      { name: "CSS3", icon: <FaCss3Alt /> },
+      { name: "JavaScript", icon: <SiJavascript /> },
+      { name: "React", icon: <FaReact /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+      { name: "Bootstrap", icon: <SiBootstrap /> },
+    ],
   },
+
   {
-    icon: <SiJavascript size={42} />,
-    title: "JavaScript",
-    desc: "ES6+ programming",
+    title: "Backend Development",
+    skills: [
+      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "Express.js", icon: <SiExpress /> },
+      { name: "Python", icon: <FaPython /> },
+      { name: "FastAPI", icon: <SiFastapi /> },
+      { name: "Flask", icon: <SiFlask /> },
+      { name: "REST APIs", icon: <FaServer /> },
+    ],
   },
+
   {
-    icon: <SiTailwindcss size={42} />,
-    title: "Tailwind CSS",
-    desc: "Modern UI styling",
+    title: "Databases",
+    skills: [
+      { name: "PostgreSQL", icon: <SiPostgresql /> },
+      { name: "SQLite", icon: <SiSqlite /> },
+      { name: "MongoDB", icon: <SiMongodb /> },
+      { name: "Supabase", icon: <SiSupabase /> },
+    ],
   },
+
   {
-    icon: <FaNodeJs size={42} />,
-    title: "Node.js",
-    desc: "Backend development",
+    title: "AI & Application Integration",
+    skills: [
+      { name: "Groq API", icon: <FaPython /> },
+      { name: "LLM APIs", icon: <FaPython /> },
+      { name: "Web Speech API", icon: <FaReact /> },
+    ],
   },
+
   {
-    icon: <SiExpress size={42} />,
-    title: "Express",
-    desc: "REST API development",
+    title: "Mobile Development",
+    skills: [
+      { name: "React Native", icon: <FaReact /> },
+      { name: "Expo", icon: <SiExpo /> },
+      { name: "JavaScript", icon: <SiJavascript /> },
+    ],
   },
+
   {
-    icon: <FaPython size={42} />,
-    title: "FastAPI",
-    desc: "High-performance Python APIs",
-  },
-  {
-    icon: <FaPython size={42} />,
-    title: "Python",
-    desc: "Backend & scripting",
-  },
-  {
-    icon: <FaServer size={42} />,
-    title: "Render",
-    desc: "Backend deployment",
-  },
-  {
-    icon: <SiPostgresql size={42} />,
-    title: "PostgreSQL",
-    desc: "Relational database",
-  },
-  {
-    icon: <SiSqlite size={42} />,
-    title: "SQLite",
-    desc: "Lightweight database",
-  },
-  {
-    icon: <SiMongodb size={42} />,
-    title: "MongoDB",
-    desc: "NoSQL database",
-  },
-  {
-    icon: <SiSupabase size={42} />,
-    title: "Supabase",
-    desc: "Authentication & database",
-  },
-  {
-    icon: <FaDocker size={42} />,
-    title: "Docker",
-    desc: "Containerization",
-  },
-  {
-    icon: <FaLinux size={42} />,
-    title: "Linux",
-    desc: "Command line & development",
-  },
-  {
-    icon: <FaGitAlt size={42} />,
-    title: "Git",
-    desc: "Version control",
-  },
-  {
-    icon: <FaGithub size={42} />,
-    title: "GitHub",
-    desc: "Code collaboration",
-  },
-  {
-    icon: <SiPostman size={42} />,
-    title: "Postman",
-    desc: "API testing",
-  },
-  {
-    icon: <SiVercel size={42} />,
-    title: "Vercel",
-    desc: "Frontend deployment",
-  },
-  {
-    icon: <FaPython size={42} />,
-    title: "LLM APIs",
-    desc: "OpenAI & Groq integration",
+    title: "Tools & Deployment",
+    skills: [
+      { name: "Git", icon: <FaGitAlt /> },
+      { name: "GitHub", icon: <FaGithub /> },
+      { name: "Docker", icon: <FaDocker /> },
+      { name: "Postman", icon: <SiPostman /> },
+      { name: "Linux", icon: <FaLinux /> },
+      { name: "Vercel", icon: <SiVercel /> },
+      { name: "Render", icon: <SiRender /> },
+    ],
   },
 ];
 
 export default function Skills() {
   return (
-    <section id="skills" className="w-full py-24 bg-[#F8FAFC]">
-      <div className="max-w-6xl mx-auto px-6">
-        {/* Header */}
+    <section
+      id="skills"
+      className="w-full py-16 sm:py-20 lg:py-24 bg-[#F8FAFC] scroll-mt-24"
+    >
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
+
+        {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="text-center"
         >
-          <p className="uppercase tracking-[3px] text-[#00246B] font-semibold">
+          <p className="uppercase tracking-[3px] text-[#00246B] font-semibold text-sm sm:text-base">
             Skills
           </p>
 
-          <h2 className="text-5xl font-bold mt-4">Tech Stack</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-3 sm:mt-4 text-[#2E2E2E]">
+            Tech Stack
+          </h2>
 
-          <p className="text-gray-500 mt-5 max-w-2xl mx-auto">
-            Technologies I use to design, build and deploy modern web
-            applications.
+          <p className="text-gray-500 mt-4 sm:mt-5 max-w-2xl mx-auto text-sm sm:text-base leading-7">
+            Technologies and tools I use to build, integrate, and deploy
+            modern web and AI-powered applications.
           </p>
         </motion.div>
 
-        {/* Skills Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-          {skills.map((skill, index) => (
+        {/* Skill Categories */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 lg:gap-7 mt-10 sm:mt-12 lg:mt-14">
+
+          {skillCategories.map((category, index) => (
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
+              key={category.title}
+              initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.08 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10, scale: 1.03 }}
-              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl transition duration-300 border border-transparent hover:border-[#00246B]"
+              transition={{
+                duration: 0.5,
+                delay: index * 0.05,
+              }}
+              viewport={{ once: true, amount: 0.1 }}
+              className="bg-white rounded-2xl sm:rounded-3xl border border-gray-100 shadow-sm p-5 sm:p-6 lg:p-7 hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="text-[#00246B]">{skill.icon}</div>
+              {/* Category Title */}
+              <h3 className="text-lg sm:text-xl font-bold text-[#2E2E2E] mb-5">
+                {category.title}
+              </h3>
 
-              <h3 className="text-2xl font-bold mt-6">{skill.title}</h3>
+              {/* Skills */}
+              <div className="flex flex-wrap gap-2.5 sm:gap-3">
+                {category.skills.map((skill) => (
+                  <div
+                    key={skill.name}
+                    className="flex items-center gap-2 px-3 py-2 bg-[#F8FAFC] border border-gray-200 rounded-xl text-sm text-gray-700 hover:border-[#00246B] hover:text-[#00246B] transition-colors"
+                  >
+                    <span className="text-[#00246B] text-base sm:text-lg">
+                      {skill.icon}
+                    </span>
 
-              <p className="text-gray-500 mt-4">{skill.desc}</p>
+                    <span className="font-medium">
+                      {skill.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </motion.div>
           ))}
+
         </div>
       </div>
     </section>

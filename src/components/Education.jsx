@@ -26,50 +26,76 @@ const education = [
 
 export default function Education() {
   return (
-    <section id="education" className="py-28 bg-white px-6">
-      <div className="max-w-5xl mx-auto">
+    <section
+      id="education"
+      className="w-full py-16 sm:py-20 lg:py-24 bg-white scroll-mt-24"
+    >
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
 
-        <div className="text-center mb-20">
-          <p className="uppercase tracking-[4px] text-[#00246B] font-semibold">
+        {/* Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <p className="text-sm sm:text-base uppercase tracking-[3px] sm:tracking-[4px] text-[#00246B] font-semibold">
             Education
           </p>
 
-          <h2 className="text-5xl font-bold text-[#2E2E2E] mt-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2E2E2E] mt-3 sm:mt-4">
             My Journey
           </h2>
-        </div>
+        </motion.div>
 
-        <div className="relative border-l-4 border-[#00246B] ml-6">
+        {/* Timeline */}
+        <div className="relative mt-12 sm:mt-16 lg:mt-20">
 
-          {education.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, x: 40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.2 }}
-              className="mb-16 ml-8 relative"
-            >
-              <div className="absolute -left-[46px] top-2 w-6 h-6 rounded-full bg-[#00246B] border-4 border-white shadow-lg"></div>
+          {/* Timeline line */}
+          <div className="absolute left-[7px] sm:left-[11px] top-2 bottom-2 w-[3px] bg-[#00246B]" />
 
-              <span className="text-[#00246B] font-semibold">
-                {item.year}
-              </span>
+          <div className="space-y-10 sm:space-y-14 lg:space-y-16">
 
-              <h3 className="text-2xl font-bold mt-2">
-                {item.title}
-              </h3>
+            {education.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  delay: index * 0.15,
+                  duration: 0.6,
+                }}
+                className="relative pl-8 sm:pl-12"
+              >
+                {/* Timeline dot */}
+                <div className="absolute left-0 top-1 w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-[#00246B] border-4 border-white shadow-md" />
 
-              <p className="text-gray-600 mt-2 font-medium">
-                {item.place}
-              </p>
+                {/* Content */}
+                <div className="bg-[#F8FAFC] rounded-2xl p-5 sm:p-6 lg:p-7 shadow-sm hover:shadow-md transition">
 
-              <p className="text-gray-500 mt-3 leading-7">
-                {item.description}
-              </p>
-            </motion.div>
-          ))}
+                  <span className="inline-block text-sm sm:text-base text-[#00246B] font-semibold">
+                    {item.year}
+                  </span>
 
+                  <h3 className="text-xl sm:text-2xl font-bold mt-2 text-[#1F2937] leading-snug">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-gray-600 mt-2 font-medium text-sm sm:text-base">
+                    {item.place}
+                  </p>
+
+                  <p className="text-gray-500 mt-3 leading-7 text-sm sm:text-base">
+                    {item.description}
+                  </p>
+
+                </div>
+              </motion.div>
+            ))}
+
+          </div>
         </div>
       </div>
     </section>
